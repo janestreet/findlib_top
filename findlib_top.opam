@@ -6,7 +6,7 @@ bug-reports: "https://github.com/janestreet/findlib_top/issues"
 dev-repo: "git+https://github.com/janestreet/findlib_top.git"
 license: "Apache-2.0"
 build: [
-  ["jbuilder" "build" "--only-packages" "findlib_top" "--root" "." "-j" jobs "@install"]
+  ["jbuilder" "build" "-p" name "-j" jobs]
 ]
 depends: [
   "jbuilder" {build & >= "1.0+beta8"}
